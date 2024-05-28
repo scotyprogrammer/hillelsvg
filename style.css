@@ -1,0 +1,34 @@
+svg {
+    display: block;
+    margin: 20px auto;
+}
+
+.square {
+    fill: lightblue;
+    stroke: blue;
+    stroke-width: 5px;
+}
+
+.rectangle {
+    fill: lightgreen;
+    stroke: green;
+    stroke-width: 5px;
+}
+
+.circle {
+    fill: lightcoral;
+    stroke: red;
+    stroke-width: 5px;
+    transition: fill 1s, stroke 1s;
+}
+
+.circle:hover {
+    fill: yellow;
+    stroke: orange;
+}
+
+.ellipse {
+    fill: lightyellow;
+    stroke: gold;
+    stroke-width: 5px;
+}
