@@ -19,16 +19,26 @@ svg {
     fill: lightcoral;
     stroke: red;
     stroke-width: 5px;
-    transition: fill 1s, stroke 1s;
-}
-
-.circle:hover {
-    fill: yellow;
-    stroke: orange;
+    animation: colorChange 3s infinite alternate;
 }
 
 .ellipse {
     fill: lightyellow;
     stroke: gold;
     stroke-width: 5px;
+}
+
+@keyframes colorChange {
+    0% {
+        fill: lightcoral;
+        stroke: red;
+    }
+    50% {
+        fill: orange;
+        stroke: darkorange;
+    }
+    100% {
+        fill: yellow;
+        stroke: gold;
+    }
 }
